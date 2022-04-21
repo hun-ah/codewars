@@ -16,3 +16,15 @@ function findNeedle(haystack) {
 function invert(array) {
    return array.map(x => -x)
 }
+
+/* Clock shows h hours, m minutes and s seconds after midnight.
+
+Your task is to write a function which returns the time since midnight in milliseconds. */
+
+function past(h, m, s) {
+   h *= 3600
+   m *= 60
+   let timeInSeconds = h + m + s
+   let timeInMilliseconds = timeInSeconds * 1000
+   return timeInMilliseconds
+}
