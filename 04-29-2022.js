@@ -7,3 +7,17 @@ var min = function (list) {
 var max = function (list) {
    return Math.max(...list)
 }
+
+/* Write a function which calculates the average of the numbers in a given list.
+
+Note: Empty arrays should return 0.
+
+ */
+
+function find_average(array) {
+   if (array.length === 0) {
+      return 0
+   }
+   let average = array.reduce((a, c) => a + c, 0) / array.length
+   return average
+}
