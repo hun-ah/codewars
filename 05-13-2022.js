@@ -29,3 +29,9 @@ Write a function to return the 3rd. */
 function otherAngle(a, b) {
    return 180 - (a + b)
 }
+
+/* Write function RemoveExclamationMarks which removes all exclamation marks from a given string. */
+
+function removeExclamationMarks(s) {
+   return s.split('!').join('')
+}
