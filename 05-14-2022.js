@@ -30,3 +30,4 @@ function getPlanetName(id) {
    }
 
    return name;
+}
