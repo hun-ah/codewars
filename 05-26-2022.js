@@ -6,3 +6,19 @@ function doubleChar(str) {
    let newArr = arr.map(x => x + x).join('')
    return newArr
 }
+
+/* Used switch statement to solve previously solved codewars */
+
+function updateLight(current) {
+   switch (current) {
+      case 'green':
+         return 'yellow'
+         break;
+      case 'yellow':
+         return 'red'
+         break;
+      case 'red':
+         return 'green'
+   }
+
+}
