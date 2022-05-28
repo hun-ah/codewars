@@ -10,3 +10,7 @@ function oddCount(n) {
       }
    }
 }
+
+// simplified even more... I wasn't thinking
+
+const oddCount = n => Math.floor(n / 2)
