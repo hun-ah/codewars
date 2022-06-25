@@ -30,3 +30,13 @@ function xor(a, b) {
 function getChar(c) {
    return String.fromCharCode(c)
 }
+
+/* Write a function that returns a string in which firstname is swapped with last name. */
+
+function nameShuffler(str) {
+   let arr = []
+   let split = str.split(' ')
+   arr.push(split.pop())
+   arr.push(split.shift())
+   return arr.join(' ')
+}
