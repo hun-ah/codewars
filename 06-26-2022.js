@@ -19,3 +19,16 @@ function pipeFix(numbers) {
    }
    return arr
 }
+
+/* If the wolf is the closest animal to you, return "Pls go away and stop eating my sheep". Otherwise, return "Oi! Sheep number N! You are about to be eaten by a wolf!" where N is the sheep's position in the queue. */
+
+function warnTheSheep(queue) {
+   for (let i = queue.length - 1; i >= 0; i--) {
+   }
+   if (queue.indexOf('wolf') === queue.length - 1) {
+      return 'Pls go away and stop eating my sheep'
+   } else {
+      return `Oi! Sheep number ${queue.length - 1 - queue.indexOf('wolf')}! You are about to be eaten by a wolf!`
+   }
+
+}
