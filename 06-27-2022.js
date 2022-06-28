@@ -12,3 +12,9 @@ function howManyDalmatians(number) {
 
    return respond
 }
+
+/* Given the initial configuration of the cubes in the box, find out how many cubes are in each of the n columns after Bob switches the gravity. */
+
+const flip = (d, a) => {
+   return d === 'R' ? a.sort((a, b) => a - b) : a.sort((a, b) => a - b).reverse()
+}
