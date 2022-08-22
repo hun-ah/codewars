@@ -2,3 +2,5 @@
 
 items = []
 items.push({ a: "b", c: "d" })
+
+// needed to add brackets to the push method
