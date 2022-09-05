@@ -4,6 +4,6 @@ function toFreud(string) {
    if (string === '') {
       return ''
    } else if (string.length > 0) {
-      return string.split(' ').map(word => 'sex').join(' ')
+      return string.split(' ').map(word => 'hello').join(' ')
    }
 }
