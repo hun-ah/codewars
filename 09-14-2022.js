@@ -5,5 +5,5 @@ function numberToPower(number, power) {
    for (let i = 1; i <= power; i++) {
       sum *= number
    }
-   console.log(sum)
+   return sum
 }
