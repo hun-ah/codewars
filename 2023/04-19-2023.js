@@ -23,3 +23,16 @@ var capitals = function (word) {
 
 console.log(capitals('CodEWaRs'), [0, 3, 4, 6])
 console.log(capitals('tsaNeijmSo'), [3, 8])
+
+function remove(str) {
+   const arr = str.split('')
+   arr[arr.length - 1] === '!' && arr.pop()
+   return arr.join('')
+}
+
+console.log(remove("Hi!"), "Hi")
+console.log(remove("Hi!!!"), "Hi!!")
+console.log(remove("!Hi"), "!Hi")
+console.log(remove("!Hi!"), "!Hi")
+console.log(remove("Hi! Hi!"), "Hi! Hi")
+console.log(remove("Hi"), "Hi")
