@@ -36,3 +36,21 @@ console.log(remove("!Hi"), "!Hi")
 console.log(remove("!Hi!"), "!Hi")
 console.log(remove("Hi! Hi!"), "Hi! Hi")
 console.log(remove("Hi"), "Hi")
+
+function replace(s) {
+   const noVowels = []
+   const vowels = ['a', 'e', 'i', 'o', 'u']
+   s.split('').forEach(e => {
+      if (vowels.includes(e.toLowerCase())) {
+         noVowels.push('!')
+      } else {
+         noVowels.push(e)
+      }
+   })
+   return noVowels.join('')
+}
+
+console.log(replace("Hi!"), "H!!")
+console.log(replace("!Hi! Hi!"), "!H!! H!!")
+console.log(replace("aeiou"), "!!!!!")
+console.log(replace("ABCDE"), "!BCD!")
