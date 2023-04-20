@@ -17,3 +17,13 @@ console.log(seatsInTheater(1, 1, 1, 1), 0)
 console.log(seatsInTheater(13, 6, 8, 3), 18)
 console.log(seatsInTheater(60, 100, 60, 1), 99)
 console.log(seatsInTheater(1000, 1000, 1000, 1000), 0)
+
+function Sleigh() { }
+
+Sleigh.prototype.authenticate = function (name, password) {
+   return name === 'Santa Claus' && password === 'Ho Ho Ho!'
+};
+
+let sleigh = new Sleigh
+console.log(sleigh.authenticate('bob', '123'))
+console.log(sleigh.authenticate('Santa Claus', 'Ho Ho Ho!'))
