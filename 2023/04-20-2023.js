@@ -27,3 +27,20 @@ Sleigh.prototype.authenticate = function (name, password) {
 let sleigh = new Sleigh
 console.log(sleigh.authenticate('bob', '123'))
 console.log(sleigh.authenticate('Santa Claus', 'Ho Ho Ho!'))
+
+
+// array of positive or negative integers
+//    => sum diff between consecutive pairs in descending order
+// Ex: [2, 1, 10] ...[10, 2, 1] => (10 - 2) + (2 - 1) = 8 + 1 = 9
+function sumOfDifferences(arr) {
+   let total = 0
+   const sorted = arr.sort((a, b) => b - a)
+   for (let i = 0; i < sorted.length - 1; i++) {
+      total += sorted[i] - sorted[i + 1]
+   }
+   return total
+}
+
+console.log(sumOfDifferences([2, 1, 10]), 9)
+console.log(sumOfDifferences([-3, -2, -1]), 2)
+console.log(sumOfDifferences([9, 100, 34, 5, 22, 1]), 99)
