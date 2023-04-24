@@ -5,9 +5,9 @@ function derive(c, e) {
    return `${c * e}x^${e - 1}`
 }
 
-quantity of mangos & price per mango
-   => total cost
-      (2, 3) => 6 || (5, 3) => 12
+// quantity of mangos & price per mango
+//    => total cost
+//       (2, 3) => 6 || (5, 3) => 12
 
 function mango(quantity, price) {
    // for every multiple of 3, subtract 1 
@@ -62,3 +62,15 @@ var sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 
 const stairs = [monday, tuesday, wednesday, thursday, friday, saturday, sunday]
 
 console.log(stairsIn20(stairs))
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+   if (dolphin) sharkSpeed /= 2
+
+   if ((pontoonDistance / youSpeed) < (sharkDistance / sharkSpeed)) return 'Alive!'
+
+   return 'Shark Bait!'
+}
+
+console.log(shark(12, 50, 4, 8, true), "Alive!");
+console.log(shark(7, 55, 4, 16, true), "Alive!");
+console.log(shark(24, 0, 4, 8, true), "Shark Bait!");
